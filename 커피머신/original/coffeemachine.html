@@ -1,0 +1,101 @@
+<!--
+	2015년 7월 27일
+
+	대전교육정보영재교육원 영재 리더심 캠프
+
+	한국교원대학교 김태영 교수님과 함께
+-->
+
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+		<meta charset = "utf-8">
+		<title>커피머신</title>
+
+		<script type = "text/javascript">
+
+			var money;
+			var price = 200;
+
+			function moneyin(){
+				money = eval(document.자판기.moneyin.value);
+
+				if(money < price){
+					alert("돈을 "+(price - money)+"원 더 내야 합니다.");
+
+					document.자판기.moneyin.value = 0;
+					document.자판기.change.value = money;
+				}
+
+			}
+
+			function beullaek(){
+				moneyin();
+
+				if(money >= price){
+					alert("블랙 커피입니다.");
+					
+					document.자판기.moneyin.value = 0;
+					document.자판기.change.value = money - price;
+				}
+			}
+			
+			function seoltang(){
+				moneyin();
+
+				if(money >= price){
+					alert("설탕 커피입니다.");
+					
+					document.자판기.moneyin.value = 0;
+					document.자판기.change.value = money - price;
+				}
+			}
+			
+			function milkeu(){
+				moneyin();
+
+				if(money >= price){
+					alert("밀크 커피입니다.");
+					
+					document.자판기.moneyin.value = 0;
+					document.자판기.change.value = money - price;
+				}
+			}
+			
+			function chwiso(){
+				moneyin();
+				
+				alert("취소합니다.");
+
+				document.자판기.moneyin.value = 0;
+				document.자판기.change.value = money;
+			}
+
+		</script>
+
+	</head>
+	
+	<body style = "background-color: #996633; text-align: center;">
+		<div style = "position: relative margin: 0 auto;">
+			<div style = " padding: 16px; color: #fff; border-style: solid; border-width: 4px; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
+				<h1>커피자판기</h1>
+
+				<form name = "자판기">
+					<p>동전: <input type = "text" size = 10 name = "moneyin"/></p>
+					<p>
+						<input type = "button" name = "블랙" value = "블랙" onclick = "beullaek();"/>
+						<input type = "button" name = "설탕" value = "설탕" onclick = "seoltang();"/>
+						<input type = "button" name = "밀크" value = "밀크" onclick = "milkeu();"/>
+					</p><p>
+						<input type = "button" name = "취소" value = "취소" onclick = "chwiso();"/>
+					</p>
+					<p>잔돈: <input type = "text" size = 10 name = "change"/></p>
+				</form>
+
+			</div>
+		</div>
+	</body>
+
+</html>
