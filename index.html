@@ -1,6 +1,9 @@
 <!DOCTYPE html>
+
 <html>
+
     <head>
+
         <meta charset = "utf-8"/>
         <!-- HTML5 shiv on Google CDN [http://snipplr.com/view/50498/] -->
         <!--[if IE]>
@@ -11,13 +14,35 @@
         
         <meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
         
-        <link rel = "stylesheet" href = "style.css">
+        <link rel = "stylesheet" href = "index.css">
+
+        <script src = "https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+        <script type = "text/javascript">
+
+        	var title;
+
+        	$.getJSON("https://api.tumblr.com/v2/blog/jang-dan.tumblr.com/info?callback=?", {
+			    api_key: "FI46HyWhqi5e28aXcd7iZngBTHMhYafWL1DP5RI75jpYbb9oKL",
+				}
+			).then(function(info){
+				title = info.response.blog.title;
+				document.querySelector("#title").innerHTML = title;
+			});
+
+        </script>
+
         <title>jangdan</title>
+
     </head>
+
     <body>
         <div class = "overlay">
-            <p id = "title" class = "center">jangdan</p>
+            <p id = "title" class = "center"></p>
         </div>
+
         <img id = "avatar" class = "center" src = "https://api.tumblr.com/v2/blog/jang-dan.tumblr.com/avatar/512" />
+
     </body>
+
 </html>

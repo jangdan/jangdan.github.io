@@ -50,10 +50,15 @@ table {
 
 /* my css */
 
+@font-face {
+    font-family: NanumGothicLight;
+    src: url(http://jangdan.github.io/static/NanumGothicLight.otfs);
+}
+
 
 body {
     font-size: 64px;
-    font-family: Monospace;
+    font-family: NanumGothicLight, "Courier New", Monospace;
 }
 
 img {
