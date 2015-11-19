@@ -22,10 +22,9 @@
 
         	var title;
 
-        	$.getJSON("https://api.tumblr.com/v2/blog/jang-dan.tumblr.com/info?callback=?", {
+        	$.getJSON("https://api.tumblr.com/v2/blog/jangdan.tumblr.com/info?callback=?", {
 			    api_key: "FI46HyWhqi5e28aXcd7iZngBTHMhYafWL1DP5RI75jpYbb9oKL",
-				}
-			).then(function(info){
+			}).then(function(info){
 				title = info.response.blog.title;
 				document.querySelector("#title").innerHTML = title;
 			});
@@ -41,7 +40,7 @@
             <p id = "title" class = "center"></p>
         </div>
 
-        <img id = "avatar" class = "center" src = "https://api.tumblr.com/v2/blog/jang-dan.tumblr.com/avatar/512" />
+        <img id = "avatar" class = "center" src = "https://api.tumblr.com/v2/blog/jangdan.tumblr.com/avatar/512" />
 
     </body>
 
