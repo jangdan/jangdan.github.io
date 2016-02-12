@@ -50,15 +50,12 @@ table {
 
 /* my css */
 
-@font-face {
-    font-family: NanumGothicLight;
-    src: url(fonts/NanumGothic/NanumGothicLight.otf);
-}
-
-
 body {
     font-size: 64px;
     font-family: "Courier New", NanumGothicLight, Monospace;
+
+    font-weight: 300;
+    
 }
 
 img {

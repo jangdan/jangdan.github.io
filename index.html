@@ -5,18 +5,25 @@
     <head>
 
         <meta charset = "utf-8"/>
+
         <!-- HTML5 shiv on Google CDN [http://snipplr.com/view/50498/] -->
         <!--[if IE]>
             <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
         <![endif]-->
-        
-        <link rel = "icon" type = "image/png" href = "https://avatars0.githubusercontent.com/u/1841652">
+
         
         <meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
+
+
+        <link rel = "icon" type = "image/png" href = "https://avatars0.githubusercontent.com/u/1841652">
         
+        
+        <link rel = "stylesheet" href = "fonts/NanumGothic/NanumGothic.css">
         <link rel = "stylesheet" href = "index.css">
 
+
         <script src = "https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
 
         <script type = "text/javascript">
 
@@ -26,18 +33,20 @@
 			    api_key: "FI46HyWhqi5e28aXcd7iZngBTHMhYafWL1DP5RI75jpYbb9oKL",
 			}).then(function(info){
 				title = info.response.blog.title;
-				document.querySelector("#title").innerHTML = title;
+				document.querySelector("#title").innerHTML = "나눔고딕" + title;
 			});
 
         </script>
+
 
         <title>jangdan</title>
 
     </head>
 
     <body>
+
         <div class = "overlay">
-            <p id = "title" class = "center"></p>
+            <p id = "title" class = "center">jangdan</p>
         </div>
 
         <img id = "avatar" class = "center" src = "https://api.tumblr.com/v2/blog/jangdan.tumblr.com/avatar/512" />
