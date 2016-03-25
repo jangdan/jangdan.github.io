@@ -124,6 +124,34 @@ h2 {
 
 
 
+
+#cu {
+
+	background:
+		url("../assets/crt.png") repeat,
+		url("https://raw.githubusercontent.com/jangdan/cu/master/screenshot.png") no-repeat center/100%;
+
+
+	color: #FFF;
+
+}
+
+
+
+#mechanics {
+
+	background:
+		url("../assets/crt.png") repeat,
+		url("https://raw.githubusercontent.com/jangdan/mechanics/master/screenshot.png") no-repeat center/100%;
+
+
+	color: #FFF;
+
+}
+
+
+
+
 #electricmango {
 
 	background:
@@ -137,6 +165,7 @@ h2 {
 
 
 
+
 #amoeba {
 
 	background:
@@ -145,5 +174,5 @@ h2 {
 
 
 	color: #FFF;
-	
+
 }
