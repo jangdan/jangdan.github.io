@@ -1,0 +1,123 @@
+@import url(lib/reset.css);
+
+
+
+
+
+div.center-wrapper {
+
+	text-align: center;
+
+}
+
+
+
+
+
+body {
+
+	font-family: "Courier New", monospace;
+	font-size: 16px;
+
+}
+
+
+
+h1 {
+
+	font-size: 64px;
+
+	padding: 0.5em;
+
+	margin: 1em;
+
+}
+
+
+
+
+
+div.showcase {
+
+	display: inline-block;
+
+
+	width: 66%; /*TODO: a more responsive width*/
+
+}
+
+
+
+.column {
+
+	display: flex;
+
+}
+
+
+.column > a {
+
+	display: block;
+
+	flex: 1;
+
+	width: 25%;
+
+}
+
+
+
+.tile {
+
+	display: inline-block;
+
+	vertical-align: top;
+
+
+	/*
+	margin: 1px;
+	*/
+
+	padding: 1em;
+	padding-bottom: 2em;
+
+
+	text-align: center;
+
+	text-decoration: none;
+
+}
+
+
+
+h2 {
+
+	font-size: 32px;
+
+	padding: 0.5em;
+
+}
+
+
+
+
+#treejs {
+
+	background:
+		url("../assets/crt.png") repeat,
+		url("../assets/images/Screen Shot 2016-02-23 at 5.35.09 PM.png") no-repeat center/100%; /* TODO: make background more flexible */
+
+	color: #FFF;
+}
+
+
+
+#gidungjido {
+
+	background:
+		url("../assets/crt.png") repeat,
+		url("../assets/images/gidungjido.png") no-repeat center/100%;
+
+	color: #FFF;
+
+}

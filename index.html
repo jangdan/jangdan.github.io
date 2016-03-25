@@ -1,55 +1,94 @@
-<!DOCTYPE html>
+<!doctype html>
 
-<html>
+<html lang = "en">
 
-    <head>
+	<head>
 
-        <meta charset = "utf-8"/>
+		<meta charset = "utf-8">
 
-        <!-- HTML5 shiv on Google CDN [http://snipplr.com/view/50498/] -->
-        <!--[if IE]>
-            <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-        <![endif]-->
-
-        
-        <meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
+		<meta name = "description" content = "jangdan">
+		<meta name = "keywords" content = "jangdan, electricmango, electronicmango, newelectricmango, ssal, ssalbap">
 
 
-        <link rel = "icon" type = "image/png" href = "https://avatars0.githubusercontent.com/u/1841652">
-        
-        
-        <link rel = "stylesheet" href = "index.css">
+		<link rel = "icon" type = "image/png" href = "https://avatars0.githubusercontent.com/u/1841652">
+
+		<link rel = "stylesheet" href = "css/showcase.css">
+
+	</head>
+
+	<body>
+
+		<h1>jangdan</h1>
 
 
+		<!--
+		<div class = "center-wrapper">
+			<div class = "showcase">
+				-->
 
-        <script src = "https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+				<div class = "column">
 
-        <script type = "text/javascript">
+					<a href = "https://github.com/jangdan/tree.js" id = "treejs"  class = "tile">
 
-        	var title;
+						<h2>tree.js</h2>
 
-        	$.getJSON("https://api.tumblr.com/v2/blog/jangdan.tumblr.com/info?callback=?", {
-			    api_key: "FI46HyWhqi5e28aXcd7iZngBTHMhYafWL1DP5RI75jpYbb9oKL",
-			}).then(function(info){
-				title = info.response.blog.title;
-				document.querySelector("#title").innerHTML = title;
-			});
+						a minimal JavaScript library for tree data structures
 
-        </script>
+					</a>
+
+					<a href = "http://jangdan.github.io/gidungjido/" id = "gidungjido" class = "tile">
+						
+						<h2>gidungjido</h2>
+
+						a 3D bar graph of the world
+
+					</a>
+
+					<a href = "http://electricmango.github.io/" id = "electricmango" class = "tile">
+						
+						<h2>electricmango</h2>
+
+						hobby electronics!
+						<br>
+						and Arduinos
+
+					</a>
+
+					<a href = "https://ssalbap.tumblr.com/" id = "ssal" class = "tile">
+						
+						<h2>ssal</h2>
+
+						chusangjeok yesul
+
+					</a>
+
+				</div>
+
+				<!--
+			</div>
+		</div>
+		-->
 
 
-        <title>jangdan</title>
+		<script type = "text/javascript">
+			
+			window.addEventListener("resize", function(){
 
-    </head>
+				tiles = document.getElementsByClassName("tile");
 
-    <body>
+				console.log(tiles);
 
-        <div class = "overlay">
-            <p id = "title" class = "center-horizontal">jangdan</p>
-        </div>
+				for(i = 0; i < tiles.length; ++i){
 
-        <img id = "avatar" class = "center-horizontal" src = "https://api.tumblr.com/v2/blog/jangdan.tumblr.com/avatar/512" />
+					//tiles[i].style.height = tiles[i].style.width + "px";
+					console.log(tiles[i].style.width);
 
-    </body>
+				}
+
+			})
+
+		</script>
+
+	</body>
 
 </html>
