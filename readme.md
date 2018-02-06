@@ -1,1 +1,0 @@
-# jangdan.github.io
