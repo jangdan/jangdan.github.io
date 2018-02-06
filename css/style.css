@@ -1,4 +1,6 @@
+
 @import url(lib/reset.css);
+
 
 
 
@@ -14,19 +16,20 @@ body {
 	text-align: center;
 
 
+
 	font-family: "Courier New", "Noto Sans KR", "Noto Sans TC";
-
 	font-weight: 100;
-
 	font-size: 16px;
 
 }
 
 
 
+
 h1 {
 
 	padding: 1em;
+
 
 
 	font-size: 64px;
@@ -53,10 +56,10 @@ h1 {
 
 	margin-top: calc(33vh - 256px);
 
+	border-radius: 256px;
+
+
 
 	background: url("https://api.tumblr.com/v2/blog/jangdan.tumblr.com/avatar/512") no-repeat;
-
-
-	border-radius: 256px;
 
 }
